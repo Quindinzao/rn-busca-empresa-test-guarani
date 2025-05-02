@@ -12,6 +12,8 @@
 		04514CB62DC410C5006C7266 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04514CB12DC410C5006C7266 /* Roboto-Bold.ttf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-BuscaEmpresa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-BuscaEmpresa.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		3B6B74CF15394BA3AB4B353E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 072353D658964E7CA682DB7A /* Colors.xcassets */; };
+		45E3B9D4836D4284A122BACE /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92EBD70EA6464B3EB3B29A4E /* BootSplash.storyboard */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		B3609605DC6B91649BAB7276 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
@@ -21,6 +23,7 @@
 		04514CB12DC410C5006C7266 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		04514CB22DC410C5006C7266 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		04514CB32DC410C5006C7266 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		072353D658964E7CA682DB7A /* Colors.xcassets */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = BuscaEmpresa/Colors.xcassets; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* BuscaEmpresa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuscaEmpresa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BuscaEmpresa/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BuscaEmpresa/Info.plist; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-BuscaEmpresa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BuscaEmpresa.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = BuscaEmpresa/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BuscaEmpresa/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92EBD70EA6464B3EB3B29A4E /* BootSplash.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = BootSplash.storyboard; path = BuscaEmpresa/BootSplash.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -63,6 +67,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				92EBD70EA6464B3EB3B29A4E /* BootSplash.storyboard */,
+				072353D658964E7CA682DB7A /* Colors.xcassets */,
 			);
 			name = BuscaEmpresa;
 			sourceTree = "<group>";
@@ -181,6 +187,8 @@
 				04514CB52DC410C5006C7266 /* Roboto-Light.ttf in Resources */,
 				04514CB62DC410C5006C7266 /* Roboto-Bold.ttf in Resources */,
 				B3609605DC6B91649BAB7276 /* PrivacyInfo.xcprivacy in Resources */,
+				45E3B9D4836D4284A122BACE /* BootSplash.storyboard in Resources */,
+				3B6B74CF15394BA3AB4B353E /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
