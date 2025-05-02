@@ -1,54 +1,55 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Busca Empresas
 
-# Getting Started
+Este projeto foi desenvolvido com **React Native CLI**, usando **TypeScript**, **React Navigation**, **Async Storage**, **Context API**, **Emotion-JS** (para biblioteca de estilização), **Vector Icons**, **Splash Screen**, e muito mais.  
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## Funções
 
-## Step 1: Start Metro
+### ✅ Cadastrar Empresas
+Permite ao usuário inserir dados de uma empresa através de um formulário. Os campos geralmente incluem CNPJ, razão social, endereço (rua, número, bairro, município, UF, CEP) e uma imagem da empresa. Os dados são armazenados localmente no SQLite para que possam ser acessados mesmo sem conexão com a internet.
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+### 🔍 Pesquisar por CNPJ na lista
+Oferece um campo de busca na tela de listagem das empresas. À medida que o usuário digita o CNPJ (total ou parcial), a lista exibida é filtrada dinamicamente para mostrar apenas as empresas cujo CNPJ contém o texto digitado. Essa busca é feita localmente, com base nos dados armazenados.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+### 🛜 Acessar a API ReceitaWS
+A API ReceitaWS é utilizada para preencher automaticamente os dados da empresa a partir do número do CNPJ. Ao digitar um CNPJ válido, o app faz uma requisição à API e, caso os dados sejam retornados com sucesso, preenche os campos do formulário com as informações fornecidas (razão social, endereço, etc.), agilizando o processo de cadastro.
+
+### 🌓 Alterar entre tema Dark e Light
+A aplicação suporta alternância entre temas claro (Light) e escuro (Dark). O tema afeta cores de fundo, textos, botões e imagens padrão. Essa funcionalidade pode usar o useTheme (com emotion) e pode ser controlada com base nas configurações do sistema operacional ou por uma opção no app.
+
+### ⏳ Exibir uma tela de carregamento enquanto o app é aberto (Splash Screen)
+Ao abrir o app, uma tela de carregamento (Splash Screen) é exibida enquanto os recursos iniciais (como bancos de dados ou temas) são carregados. Essa tela pode ser personalizada com o logo da aplicação e ajuda a oferecer uma transição visual suave. É comum implementar essa funcionalidade com a biblioteca react-native-splash-screen para que ela desapareça apenas quando o app estiver totalmente pronto.
+
+## Configurar para rodar
+
+#### IMPORTANTE: Se não conseguirem rodar no ambiente, mandem uma mensagem no número (16) 98169-9765 ou uma mensagem no e-mail j.v.fernandes.contact@gmail.com
 
 ```sh
+# Configurar ambiente
+
 # Using npm
-npm start
+npm
 
 # OR using Yarn
-yarn start
+yarn
 ```
-
-## Step 2: Build and run your app
-
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
 
 ### Android
 
 ```sh
-# Using npm
+# Com npm
 npm run android
 
-# OR using Yarn
+# ou com Yarn
 yarn android
 ```
 
 ### iOS
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
 ```sh
-bundle install
+cd ios
+pod install
+cd ..
 ```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
 
 ```sh
 # Using npm
@@ -57,41 +58,3 @@ npm run ios
 # OR using Yarn
 yarn ios
 ```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.

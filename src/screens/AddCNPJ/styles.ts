@@ -15,3 +15,13 @@ export const Row = styled.View`
   justify-content: space-between;
   align-items: center;
 `;
+
+export const StyledScrollView = styled.ScrollView({
+  flex: 1,
+  width: '100%',
+  paddingTop: 8,
+});
+
+export const ScrollContent = styled.View({
+  paddingBottom: 20,
+});

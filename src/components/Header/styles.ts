@@ -11,7 +11,6 @@ export const Container = styled.View`
   width: 100%;
 
   padding: 0 16px;
-  margin-bottom: 16px;
 
   border-bottom-width: 1.5px;
   border-bottom-color: ${props => props.theme.colors.borderTextInput};

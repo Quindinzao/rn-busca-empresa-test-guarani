@@ -6,7 +6,7 @@ import Text from '../Text';
 interface PhotoButtonProps {
   onPress?: () => void;
   disabled?: boolean;
-  image?: string | null;
+  image?: string;
 }
 
 const PhotoButton = ({onPress, disabled, image}: PhotoButtonProps) => {
@@ -15,7 +15,7 @@ const PhotoButton = ({onPress, disabled, image}: PhotoButtonProps) => {
   return (
     <>
       <TouchableOpacityPhotoButton activeOpacity={0.7} disabled={disabled} onPress={onPress}>
-        {image === null ?
+        {image === '' ?
           <ImageIcon
             source={theme.title === 'dark' ?
               require('../../assets/images/darkUser.png') :
@@ -25,7 +25,7 @@ const PhotoButton = ({onPress, disabled, image}: PhotoButtonProps) => {
           <ImageSelected source={{ uri: image }} />
         }
       </TouchableOpacityPhotoButton>
-      {image === null && <Text fontSizeProp="small">Carregue uma imagem</Text>}
+      {image === '' && <Text fontSizeProp="small">Carregue uma imagem</Text>}
     </>
   );
 };
