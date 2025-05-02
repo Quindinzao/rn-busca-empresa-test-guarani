@@ -3,12 +3,12 @@ import React from 'react';
 import { Container } from './styles';
 import Text from '../../components/Text';
 
-const Home = () : React.JSX.Element => {
+const AddCNPJ = () : React.JSX.Element => {
   return (
     <Container>
-      <Text fontSizeProp="large" fontFamilyProp="bold">Home</Text>
+      <Text fontSizeProp="large" fontFamilyProp="bold">AddCNPJ</Text>
     </Container>
   );
 };
 
-export default Home;
+export default AddCNPJ;
