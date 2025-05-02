@@ -14,6 +14,7 @@ export const darkTheme: Theme = {
     color: '#FFFFFF',
     colorLabel: '#8E8E8E',
     colorPlaceholder: '#8E8E8E',
+    buttonTextColor: '#000000',
   },
   typography: {
     fontFamily: {

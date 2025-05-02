@@ -1,6 +1,5 @@
 import styled from '@emotion/native';
 
-
 interface ContainerTextInputProps {
   spaceFilled?: 1 | 2 | 3;
 }

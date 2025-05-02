@@ -2021,6 +2021,11 @@
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.2.tgz#5950e50960793055845e956c427fc2b0d70c5239"
   integrity sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==
 
+"@types/react-native-sqlite-storage@^6.0.5":
+  version "6.0.5"
+  resolved "https://registry.yarnpkg.com/@types/react-native-sqlite-storage/-/react-native-sqlite-storage-6.0.5.tgz#2b32935cc06ec59ffeade0e7c7eb6097c5d9109e"
+  integrity sha512-1gPwgYil6pHV/EDF816M8KmVsQC5nGMTAm8OMC25GbyuBaXFn7sdguMq6A2owtXB8c4qsH2tOEIQNetbOquawA==
+
 "@types/react-native-vector-icons@^6.4.18":
   version "6.4.18"
   resolved "https://registry.yarnpkg.com/@types/react-native-vector-icons/-/react-native-vector-icons-6.4.18.tgz#18671c617b9d0958747bc959903470dde91a8c79"
@@ -5748,6 +5753,11 @@ react-is@^19.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-19.1.0.tgz#805bce321546b7e14c084989c77022351bbdd11b"
   integrity sha512-Oe56aUPnkHyyDxxkvqtd7KkdQP5uIUfHxd5XTb3wE9d/kRnZLmKbDB0GWk919tdQ+mxxPtG6EAs6RMT6i1qtHg==
 
+react-native-image-picker@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-image-picker/-/react-native-image-picker-8.2.0.tgz#d8656fdd1a0f1ad262c9c129d4f75900b685e56e"
+  integrity sha512-jIGllQJuJIn0YKss/JEeb0Kos1HSsnIpU+i3bYxR27sOxSyDZQyP9dKR22olssQPlfH+rGNR/Jc6xKRkhm48vw==
+
 react-native-safe-area-context@^5.4.0:
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-5.4.0.tgz#04b51940408c114f75628a12a93569d30c525454"
@@ -5760,6 +5770,11 @@ react-native-screens@^4.10.0:
   dependencies:
     react-freeze "^1.0.0"
     warn-once "^0.1.0"
+
+react-native-sqlite-storage@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-sqlite-storage/-/react-native-sqlite-storage-6.0.1.tgz#ce6a6b852f07abbea68658d5363818c8bef45dfb"
+  integrity sha512-1tDFjrint6X6qSYKf3gDyz+XB+X79jfiL6xTugKHPRtF0WvqMtVgdLuNqZunIXjNEvNtNVEbXaeZ6MsguFu00A==
 
 react-native@0.79.1:
   version "0.79.1"

@@ -15,6 +15,7 @@ declare module '@emotion/react' {
       color: string;
       colorLabel: string;
       colorPlaceholder: string;
+      buttonTextColor: string;
     };
     typography: {
       fontFamily: {

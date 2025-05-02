@@ -27,7 +27,7 @@ const Text = ({
   const fontFamily = getFontFamily(fontFamilyProp);
 
   return (
-    <RNText style={[{ fontFamily, fontSize, color: theme.colors.color, ...rest }]} {...rest}>
+    <RNText style={[{ fontFamily, fontSize, color: theme.colors.color, ...rest.style?.valueOf }]}>
       {children}
     </RNText>
   );

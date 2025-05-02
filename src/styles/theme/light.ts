@@ -3,7 +3,7 @@ import { darkTheme } from './dark';
 
 export const lightTheme: Theme = {
   ...darkTheme,
-  title: 'dark',
+  title: 'light',
   colors: {
     primary: '#0D8094',
     secondary: '#08434D',
@@ -16,5 +16,6 @@ export const lightTheme: Theme = {
     color: '#000000',
     colorLabel: '#6E6E6E',
     colorPlaceholder: '#AAAAAA',
+    buttonTextColor: '#FFFFFF',
   },
 };
