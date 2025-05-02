@@ -20,4 +20,5 @@ export const RNTextInput = styled.TextInput`
   padding: 0 20px;
   margin-bottom: 10px;
   font-size: 16px;
+  color: ${props => props.theme.colors.color};
 `;

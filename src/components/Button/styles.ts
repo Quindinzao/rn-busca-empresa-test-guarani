@@ -13,7 +13,6 @@ export const ButtonText = styled.Text`
   font-size: 14px;
   font-weight: 500;
   text-align: center;
-  line-height: 20px;
   font-family: ${props => props.theme.typography.fontFamily.bold};
   text-transform: uppercase;
   letter-spacing: 0.5px;

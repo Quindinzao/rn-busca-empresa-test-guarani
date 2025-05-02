@@ -44,3 +44,27 @@ export const insertEmpresa = async (
     [cnpj, razao, rua, numero, bairro, municipio, uf, cep, imagem]
   );
 };
+
+export const getEmpresas = async () => {
+  const db = await getDBConnection();
+
+  return new Promise((resolve, reject) => {
+    db.transaction(tx => {
+      tx.executeSql(
+        'SELECT * FROM empresas',
+        [],
+        (_, result) => {
+          const empresas = [];
+          for (let i = 0; i < result.rows.length; i++) {
+            empresas.push(result.rows.item(i));
+          }
+          resolve(empresas);
+        },
+        (_, error) => {
+          reject(error);
+          return false;
+        }
+      );
+    });
+  });
+};

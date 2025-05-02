@@ -7,6 +7,7 @@ import Text from '../Text';
 interface TextInputProps extends RNTextInputProps {
   label: string;
   spaceFilled?: 1 | 2 | 3;
+  disabled?: boolean;
 }
 
 const TextInput = ({ label, spaceFilled, ...rest }: TextInputProps) => {
