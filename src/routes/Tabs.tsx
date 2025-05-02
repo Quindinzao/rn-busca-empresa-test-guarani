@@ -5,7 +5,6 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import FontAwesome6 from '@react-native-vector-icons/fontawesome6';
 import Home from '../screens/Home';
 import AddCNPJ from '../screens/AddCNPJ';
-import Search from '../screens/Search';
 import { useTheme } from '@emotion/react';
 
 const Tab = createBottomTabNavigator();
@@ -30,11 +29,8 @@ const Tabs = () => {
             case 'Home':
               iconName = 'house';
               break;
-            case 'AddCNPJ':
-              iconName = 'magnifying-glass';
-              break;
-            case 'Search':
-              iconName = 'circle-plus';
+            case 'Add CNPJ':
+              iconName = 'plus';
               break;
             default:
               iconName = 'xmark';
@@ -45,8 +41,7 @@ const Tabs = () => {
       })}
     >
       <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="AddCNPJ" component={AddCNPJ} />
-      <Tab.Screen name="Search" component={Search} />
+      <Tab.Screen name="Add CNPJ" component={AddCNPJ} />
     </Tab.Navigator>
   );
 };

@@ -11,7 +11,7 @@ const Header = ({title} : HeaderProps) => {
   return (
     <Container>
       <Content>
-        <Text fontFamilyProp="light" fontSizeProp="medium">{title}</Text>
+        <Text fontFamilyProp="regular" fontSizeProp="medium">{title}</Text>
         <ToggleThemeSwitch />
       </Content>
     </Container>
