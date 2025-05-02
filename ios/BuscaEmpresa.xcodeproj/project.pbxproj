@@ -7,16 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		04514CA12DC3E0BB006C7266 /* LatoLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04514C9D2DC3E0BB006C7266 /* LatoLightItalic.ttf */; };
-		04514CA22DC3E0BB006C7266 /* LatoBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04514C972DC3E0BB006C7266 /* LatoBlack.ttf */; };
-		04514CA32DC3E0BB006C7266 /* LatoThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04514CA02DC3E0BB006C7266 /* LatoThinItalic.ttf */; };
-		04514CA42DC3E0BB006C7266 /* LatoBlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04514C982DC3E0BB006C7266 /* LatoBlackItalic.ttf */; };
-		04514CA52DC3E0BB006C7266 /* LatoRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04514C9E2DC3E0BB006C7266 /* LatoRegular.ttf */; };
-		04514CA62DC3E0BB006C7266 /* LatoBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04514C992DC3E0BB006C7266 /* LatoBold.ttf */; };
-		04514CA72DC3E0BB006C7266 /* LatoThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04514C9F2DC3E0BB006C7266 /* LatoThin.ttf */; };
-		04514CA82DC3E0BB006C7266 /* LatoBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04514C9A2DC3E0BB006C7266 /* LatoBoldItalic.ttf */; };
-		04514CA92DC3E0BB006C7266 /* LatoItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04514C9B2DC3E0BB006C7266 /* LatoItalic.ttf */; };
-		04514CAA2DC3E0BB006C7266 /* LatoLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04514C9C2DC3E0BB006C7266 /* LatoLight.ttf */; };
+		04514CB42DC410C5006C7266 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04514CB32DC410C5006C7266 /* Roboto-Regular.ttf */; };
+		04514CB52DC410C5006C7266 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04514CB22DC410C5006C7266 /* Roboto-Light.ttf */; };
+		04514CB62DC410C5006C7266 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04514CB12DC410C5006C7266 /* Roboto-Bold.ttf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-BuscaEmpresa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-BuscaEmpresa.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
@@ -25,16 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04514C972DC3E0BB006C7266 /* LatoBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LatoBlack.ttf; sourceTree = "<group>"; };
-		04514C982DC3E0BB006C7266 /* LatoBlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LatoBlackItalic.ttf; sourceTree = "<group>"; };
-		04514C992DC3E0BB006C7266 /* LatoBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LatoBold.ttf; sourceTree = "<group>"; };
-		04514C9A2DC3E0BB006C7266 /* LatoBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LatoBoldItalic.ttf; sourceTree = "<group>"; };
-		04514C9B2DC3E0BB006C7266 /* LatoItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LatoItalic.ttf; sourceTree = "<group>"; };
-		04514C9C2DC3E0BB006C7266 /* LatoLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LatoLight.ttf; sourceTree = "<group>"; };
-		04514C9D2DC3E0BB006C7266 /* LatoLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LatoLightItalic.ttf; sourceTree = "<group>"; };
-		04514C9E2DC3E0BB006C7266 /* LatoRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LatoRegular.ttf; sourceTree = "<group>"; };
-		04514C9F2DC3E0BB006C7266 /* LatoThin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LatoThin.ttf; sourceTree = "<group>"; };
-		04514CA02DC3E0BB006C7266 /* LatoThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LatoThinItalic.ttf; sourceTree = "<group>"; };
+		04514CB12DC410C5006C7266 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		04514CB22DC410C5006C7266 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		04514CB32DC410C5006C7266 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* BuscaEmpresa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuscaEmpresa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BuscaEmpresa/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BuscaEmpresa/Info.plist; sourceTree = "<group>"; };
@@ -62,16 +48,9 @@
 		04514C962DC3E088006C7266 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				04514C972DC3E0BB006C7266 /* LatoBlack.ttf */,
-				04514C982DC3E0BB006C7266 /* LatoBlackItalic.ttf */,
-				04514C992DC3E0BB006C7266 /* LatoBold.ttf */,
-				04514C9A2DC3E0BB006C7266 /* LatoBoldItalic.ttf */,
-				04514C9B2DC3E0BB006C7266 /* LatoItalic.ttf */,
-				04514C9C2DC3E0BB006C7266 /* LatoLight.ttf */,
-				04514C9D2DC3E0BB006C7266 /* LatoLightItalic.ttf */,
-				04514C9E2DC3E0BB006C7266 /* LatoRegular.ttf */,
-				04514C9F2DC3E0BB006C7266 /* LatoThin.ttf */,
-				04514CA02DC3E0BB006C7266 /* LatoThinItalic.ttf */,
+				04514CB12DC410C5006C7266 /* Roboto-Bold.ttf */,
+				04514CB22DC410C5006C7266 /* Roboto-Light.ttf */,
+				04514CB32DC410C5006C7266 /* Roboto-Regular.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -198,17 +177,10 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				04514CB42DC410C5006C7266 /* Roboto-Regular.ttf in Resources */,
+				04514CB52DC410C5006C7266 /* Roboto-Light.ttf in Resources */,
+				04514CB62DC410C5006C7266 /* Roboto-Bold.ttf in Resources */,
 				B3609605DC6B91649BAB7276 /* PrivacyInfo.xcprivacy in Resources */,
-				04514CA12DC3E0BB006C7266 /* LatoLightItalic.ttf in Resources */,
-				04514CA22DC3E0BB006C7266 /* LatoBlack.ttf in Resources */,
-				04514CA32DC3E0BB006C7266 /* LatoThinItalic.ttf in Resources */,
-				04514CA42DC3E0BB006C7266 /* LatoBlackItalic.ttf in Resources */,
-				04514CA52DC3E0BB006C7266 /* LatoRegular.ttf in Resources */,
-				04514CA62DC3E0BB006C7266 /* LatoBold.ttf in Resources */,
-				04514CA72DC3E0BB006C7266 /* LatoThin.ttf in Resources */,
-				04514CA82DC3E0BB006C7266 /* LatoBoldItalic.ttf in Resources */,
-				04514CA92DC3E0BB006C7266 /* LatoItalic.ttf in Resources */,
-				04514CAA2DC3E0BB006C7266 /* LatoLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,13 +211,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BuscaEmpresa/Pods-BuscaEmpresa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BuscaEmpresa/Pods-BuscaEmpresa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -282,13 +250,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BuscaEmpresa/Pods-BuscaEmpresa-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BuscaEmpresa/Pods-BuscaEmpresa-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -432,7 +396,10 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -501,7 +468,10 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;

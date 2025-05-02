@@ -8,7 +8,7 @@ const App = (): React.JSX.Element => {
   return (
     <ThemeProvider>
       <Wrapper>
-        <Header />
+        <Header title="Home" />
         <Home />
       </Wrapper>
     </ThemeProvider>

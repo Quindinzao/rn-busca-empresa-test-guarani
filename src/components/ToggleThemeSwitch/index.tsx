@@ -2,6 +2,8 @@ import React from 'react';
 import { Switch } from 'react-native';
 import { useThemeMode } from '../../contexts/ThemeContexts';
 import { useTheme } from '@emotion/react';
+import { Row } from './styles';
+// import Text from '../Text';
 
 const ToggleThemeSwitch = () => {
   const theme = useTheme();
@@ -12,15 +14,18 @@ const ToggleThemeSwitch = () => {
   const trackColor = theme.colors.secondary;
 
   return (
-    <Switch
-      value={isDark}
-      onValueChange={toggleTheme}
-      thumbColor={thumbColor}
-      trackColor={{
-        false: trackColor,
-        true: trackColor,
-      }}
-    />
+    <Row>
+      {/* <Text fontSizeProp="small">{isDark ? 'Dark' : 'Light'}</Text> */}
+      <Switch
+        value={isDark}
+        onValueChange={toggleTheme}
+        thumbColor={thumbColor}
+        trackColor={{
+          false: trackColor,
+          true: trackColor,
+        }}
+      />
+    </Row>
   );
 };
 

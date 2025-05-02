@@ -17,13 +17,13 @@ export const darkTheme: Theme = {
   },
   typography: {
     fontFamily: {
-      light: 'LatoLight',
-      regular: 'LatoRegular',
-      bold: 'LatoBold',
+      light: 'Roboto-Light',
+      regular: 'Roboto-Regular',
+      bold: 'Roboto-Bold',
     },
     fontSize: {
-      small: 12,
-      medium: 16,
+      small: 14,
+      medium: 18,
       large: 24,
     },
   },
