@@ -1,16 +1,24 @@
-/* AddCNPJ.tsx */
+// External Libraries
 import React, { useEffect, useState } from 'react';
 import { Alert } from 'react-native';
-import { Container, Wrapper } from '../../styles/global';
+
+// Components
 import TextInput from '../../components/TextInput';
 import Header from '../../components/Header';
-import { Row, ScrollContent, StyledScrollView } from './styles';
 import Button from '../../components/Button';
-import { createTable, insertEmpresa } from '../../service/database';
-import { pickImage } from '../../utils/imagePicker';
 import PhotoButton from '../../components/PhotoButton';
+
+// Services
+import { createTable, insertEmpresa } from '../../services/database';
+
+// Utils
 import { maskCNPJ } from '../../utils/masks';
 import { isValidCNPJ } from '../../utils/validators';
+import { pickImage } from '../../utils/imagePicker';
+
+// Styles
+import { Container, Wrapper } from '../../styles/global';
+import { Row, ScrollContent, StyledScrollView } from './styles';
 
 const AddCNPJ = (): React.JSX.Element => {
   const [form, setForm] = useState({

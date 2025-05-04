@@ -1,8 +1,13 @@
+// External Libraries
 import React from 'react';
 import { TextInputProps as RNTextInputProps } from 'react-native';
-import { ContainerTextInput, RNTextInput } from './styles';
 import { useTheme } from '@emotion/react';
+
+// Components
 import Text from '../Text';
+
+// Styles
+import { ContainerTextInput, RNTextInput } from './styles';
 
 interface TextInputProps extends RNTextInputProps {
   label: string;

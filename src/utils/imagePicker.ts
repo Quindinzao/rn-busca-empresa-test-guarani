@@ -1,3 +1,4 @@
+// External Libraries
 import { launchImageLibrary } from 'react-native-image-picker';
 
 export const pickImage = async (): Promise<string | null> => {

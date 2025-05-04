@@ -1,4 +1,7 @@
+// External Libraries
 import { Theme } from '@emotion/react';
+
+// Styles
 import { darkTheme } from './dark';
 
 export const lightTheme: Theme = {

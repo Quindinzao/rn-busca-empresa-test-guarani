@@ -27,7 +27,7 @@ Ao abrir o app, uma tela de carregamento (Splash Screen) é exibida enquanto os 
 # Configurar ambiente
 
 # Using npm
-npm
+npm install
 
 # OR using Yarn
 yarn

@@ -1,9 +1,12 @@
+// External Libraries
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { ActivityIndicator } from 'react-native';
 import { ThemeProvider as EmotionThemeProvider } from '@emotion/react';
+
+// Styles
 import { darkTheme } from '../styles/theme/dark';
 import { lightTheme } from '../styles/theme/light';
-import { ActivityIndicator } from 'react-native';
 
 type ThemeMode = 'light' | 'dark';
 

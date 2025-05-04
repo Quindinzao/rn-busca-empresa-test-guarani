@@ -1,11 +1,13 @@
 /* eslint-disable react/no-unstable-nested-components */
-
+// External Libraries
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import FontAwesome6 from '@react-native-vector-icons/fontawesome6';
+import { useTheme } from '@emotion/react';
+
+// Screens
 import Home from '../screens/Home';
 import AddCNPJ from '../screens/AddCNPJ';
-import { useTheme } from '@emotion/react';
 
 const Tab = createBottomTabNavigator();
 

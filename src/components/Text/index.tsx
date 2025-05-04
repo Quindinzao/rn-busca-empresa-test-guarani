@@ -1,3 +1,4 @@
+// External Libraries
 import React from 'react';
 import { Text as RNText, TextProps } from 'react-native';
 import { useTheme, Theme } from '@emotion/react';

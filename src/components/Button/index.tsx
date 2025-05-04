@@ -1,4 +1,7 @@
+// External Libraries
 import React from 'react';
+
+// Styles
 import { ButtonText, TouchableOpacityButton } from './styles';
 
 interface ButtonProps {

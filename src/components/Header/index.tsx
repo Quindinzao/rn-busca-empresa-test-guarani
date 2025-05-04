@@ -1,7 +1,12 @@
+// External Libraries
 import React from 'react';
-import { Container, Content } from './styles';
+
+// Components
 import ToggleThemeSwitch from '../ToggleThemeSwitch';
 import Text from '../Text';
+
+// Styles
+import { Container, Content } from './styles';
 
 interface HeaderProps {
   title: string;

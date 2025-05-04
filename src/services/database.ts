@@ -1,3 +1,4 @@
+// External Libraries
 import SQLite from 'react-native-sqlite-storage';
 
 SQLite.enablePromise(true);
@@ -42,6 +43,16 @@ export const insertEmpresa = async (
   return db.executeSql(
     'INSERT INTO empresas (cnpj, razao_social, rua, numero, bairro, municipio, uf, cep, imagem) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)',
     [cnpj, razao, rua, numero, bairro, municipio, uf, cep, imagem]
+  );
+};
+
+export const deleteEmpresa = async (
+  cnpj: string
+) => {
+  const db = await getDBConnection();
+  return db.executeSql(
+    'DELETE FROM empresas WHERE cnpj = ?',
+    [cnpj]
   );
 };
 

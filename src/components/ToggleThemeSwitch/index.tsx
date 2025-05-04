@@ -1,9 +1,13 @@
+// External Libraries
 import React from 'react';
 import { Switch } from 'react-native';
-import { useThemeMode } from '../../contexts/ThemeContexts';
 import { useTheme } from '@emotion/react';
+
+// Contexts
+import { useThemeMode } from '../../contexts/ThemeContexts';
+
+// Styles
 import { Row } from './styles';
-// import Text from '../Text';
 
 const ToggleThemeSwitch = () => {
   const theme = useTheme();

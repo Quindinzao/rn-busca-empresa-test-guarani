@@ -1,7 +1,12 @@
+// External Libraries
 import React from 'react';
-import { ImageIcon, ImageSelected, TouchableOpacityPhotoButton } from './styles';
 import { useTheme } from '@emotion/react';
+
+// Components
 import Text from '../Text';
+
+// Styles
+import { ImageIcon, ImageSelected, TouchableOpacityPhotoButton } from './styles';
 
 interface PhotoButtonProps {
   onPress?: () => void;
