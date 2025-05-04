@@ -7,7 +7,7 @@ import { useFocusEffect } from '@react-navigation/native';
 import { deleteEmpresa, getEmpresas } from '../../services/database';
 
 // Types
-import { Empresa } from '../../types/Empresa';
+import { EmpresaProps } from '../../interfaces/Empresa';
 
 // Components
 import Text from '../../components/Text';
@@ -21,16 +21,16 @@ import { List } from './styles';
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [allEmpresas, setAllEmpresas] = useState<Empresa[]>([]);
-  const [empresas, setEmpresas] = useState<Empresa[]>([]);
+  const [allEmpresas, setAllEmpresas] = useState<EmpresaProps[]>([]);
+  const [empresas, setEmpresas] = useState<EmpresaProps[]>([]);
 
   useFocusEffect(
     useCallback(() => {
       const fetchEmpresas = async () => {
         try {
           const data = await getEmpresas();
-          setAllEmpresas(data as Empresa[]);
-          setEmpresas(data as Empresa[]);
+          setAllEmpresas(data as EmpresaProps[]);
+          setEmpresas(data as EmpresaProps[]);
         } catch (err) {
           console.error('Erro ao buscar empresas:', err);
         }

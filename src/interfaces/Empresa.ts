@@ -1,4 +1,4 @@
-export type Empresa = {
+export interface EmpresaProps {
   id: number;
   cnpj: string;
   razao_social: string;

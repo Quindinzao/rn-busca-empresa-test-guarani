@@ -2,8 +2,8 @@
 import React from 'react';
 import { useTheme } from '@emotion/react';
 
-// Types
-import { Empresa } from '../../types/Empresa';
+// Interfaces
+import { EmpresaProps } from '../../interfaces/Empresa';
 
 // Components
 import Text from '../Text';
@@ -11,7 +11,7 @@ import Text from '../Text';
 // Styles
 import { Card, ImageContainer, StyledImage, Row, DefaultImage } from './styles';
 
-const EmpresaCard = ({ item } : { item: Empresa }) => {
+const EmpresaCard = ({ item } : { item: EmpresaProps }) => {
   const theme = useTheme();
   // const [cnpjSelected, setCnpjSelected] = useState<string>('');
 
