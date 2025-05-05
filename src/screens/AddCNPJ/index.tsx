@@ -1,6 +1,7 @@
 // External Libraries
 import React, { useEffect, useState } from 'react';
 import { Alert } from 'react-native';
+import FontAwesome6 from '@react-native-vector-icons/fontawesome6';
 
 // Components
 import TextInput from '../../components/TextInput';
@@ -18,9 +19,11 @@ import { pickImage } from '../../utils/imagePicker';
 
 // Styles
 import { Container, Wrapper } from '../../styles/global';
-import { Row, ScrollContent, StyledScrollView } from './styles';
+import { Row, ScrollContent, SearchButton, StyledScrollView } from './styles';
+import { useTheme } from '@emotion/react';
 
 const AddCNPJ = (): React.JSX.Element => {
+  const theme = useTheme();
   const [form, setForm] = useState({
     cnpj: '',
     razaoSocial: '',
@@ -77,7 +80,7 @@ const AddCNPJ = (): React.JSX.Element => {
 
       Alert.alert('Sucesso', 'Dados preenchidos automaticamente!');
     } catch (error) {
-      Alert.alert('Erro', 'Erro ao buscar dados da empresa.');
+      Alert.alert('Erro', 'Erro ao buscar dados da empresa, tente novamente mais tarde.');
       console.error(error);
     }
   };
@@ -118,7 +121,7 @@ const AddCNPJ = (): React.JSX.Element => {
       clearForm();
       Alert.alert('Sucesso', 'Empresa cadastrada com sucesso!');
     } catch (err) {
-      Alert.alert('Erro', 'Erro ao salvar no banco de dados.');
+      Alert.alert('Erro', 'Erro ao salvar no banco de dados, tente novamente mais tarde.');
       console.error(err);
     }
   };
@@ -146,6 +149,14 @@ const AddCNPJ = (): React.JSX.Element => {
                 onSubmitEditing={() => fetchEmpresaFromAPI(form.cnpj)}
                 spaceFilled={3}
               />
+              <SearchButton onPress={() => fetchEmpresaFromAPI(form.cnpj)}>
+                <FontAwesome6
+                  name="magnifying-glass"
+                  size={24}
+                  iconStyle="solid"
+                  color={theme.colors.backgroundApp}
+                />
+              </SearchButton>
 
             </Row>
             <TextInput label="Razão Social" placeholder="Razão social da empresa" value={form.razaoSocial} editable={false} />

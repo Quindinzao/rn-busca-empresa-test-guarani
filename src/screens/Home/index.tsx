@@ -19,6 +19,7 @@ import EmpresaCard from '../../components/EmpresaCard';
 // Styles
 import { Container, Wrapper } from '../../styles/global';
 import { List } from './styles';
+import { maskCNPJ } from '../../utils/masks';
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -88,8 +89,9 @@ const Home = () => {
         <TextInput
           label=""
           placeholder="Pesquisar por CNPJ"
-          value={searchTerm}
+          value={maskCNPJ(searchTerm)}
           onChangeText={handleSearch}
+          keyboardType="decimal-pad"
         />
         {empresas.length === 0 && searchTerm === '' && (
           <Text fontFamilyProp="light">Nenhuma empresa cadastrada.</Text>
