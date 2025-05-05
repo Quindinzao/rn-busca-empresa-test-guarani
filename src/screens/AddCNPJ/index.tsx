@@ -1,7 +1,6 @@
 // External Libraries
 import React, { useEffect, useState } from 'react';
 import { Alert } from 'react-native';
-import FontAwesome6 from '@react-native-vector-icons/fontawesome6';
 
 // Components
 import TextInput from '../../components/TextInput';
@@ -19,11 +18,9 @@ import { pickImage } from '../../utils/imagePicker';
 
 // Styles
 import { Container, Wrapper } from '../../styles/global';
-import { Row, ScrollContent, SearchButton, StyledScrollView } from './styles';
-import { useTheme } from '@emotion/react';
+import { Row, ScrollContent, StyledScrollView } from './styles';
 
 const AddCNPJ = (): React.JSX.Element => {
-  const theme = useTheme();
   const [form, setForm] = useState({
     cnpj: '',
     razaoSocial: '',
