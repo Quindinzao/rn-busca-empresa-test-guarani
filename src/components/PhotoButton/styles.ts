@@ -1,6 +1,11 @@
 // External Libraries
 import styled from '@emotion/native';
 
+export const Container = styled.View`
+  align-items: center;
+  margin-bottom: ${props => props.theme.spacing.md + 'px'};
+`;
+
 export const TouchableOpacityPhotoButton = styled.TouchableOpacity`
   background-color: ${props => props.theme.colors.primary};
   align-items: center;

@@ -15,6 +15,16 @@ export const Row = styled.View`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+`;
+
+export const SearchButton = styled.TouchableOpacity`
+  border-radius: ${props => props.theme.borderRadius.small + 'px'};
+  background-color: ${props => props.theme.colors.primary};
+  padding: 8px;
+  margin-bottom: 4px;
+  position: absolute;
+  right: 10px;
 `;
 
 export const StyledScrollView = styled.ScrollView({

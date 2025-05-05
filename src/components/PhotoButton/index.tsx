@@ -6,7 +6,7 @@ import { useTheme } from '@emotion/react';
 import Text from '../Text';
 
 // Styles
-import { ImageIcon, ImageSelected, TouchableOpacityPhotoButton } from './styles';
+import { Container, ImageIcon, ImageSelected, TouchableOpacityPhotoButton } from './styles';
 
 interface PhotoButtonProps {
   onPress?: () => void;
@@ -18,7 +18,7 @@ const PhotoButton = ({onPress, disabled, image}: PhotoButtonProps) => {
   const theme = useTheme();
 
   return (
-    <>
+    <Container>
       <TouchableOpacityPhotoButton activeOpacity={0.7} disabled={disabled} onPress={onPress}>
         {image === '' ?
           <ImageIcon
@@ -31,7 +31,7 @@ const PhotoButton = ({onPress, disabled, image}: PhotoButtonProps) => {
         }
       </TouchableOpacityPhotoButton>
       {image === '' && <Text fontSizeProp="small">Carregue uma imagem</Text>}
-    </>
+    </Container>
   );
 };
 

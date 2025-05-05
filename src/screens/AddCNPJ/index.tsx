@@ -1,6 +1,7 @@
 // External Libraries
 import React, { useEffect, useState } from 'react';
 import { Alert } from 'react-native';
+import FontAwesome6 from '@react-native-vector-icons/fontawesome6';
 
 // Components
 import TextInput from '../../components/TextInput';
@@ -18,9 +19,11 @@ import { pickImage } from '../../utils/imagePicker';
 
 // Styles
 import { Container, Wrapper } from '../../styles/global';
-import { Row, ScrollContent, StyledScrollView } from './styles';
+import { Row, ScrollContent, SearchButton, StyledScrollView } from './styles';
+import { useTheme } from '@emotion/react';
 
 const AddCNPJ = (): React.JSX.Element => {
+  const theme = useTheme();
   const [form, setForm] = useState({
     cnpj: '',
     razaoSocial: '',
@@ -95,7 +98,7 @@ const AddCNPJ = (): React.JSX.Element => {
 
   const handleSave = async () => {
     if (!form.cnpj || !form.razaoSocial || !form.rua || !form.numero || !form.bairro || !form.municipio || !form.uf || !form.cep) {
-      Alert.alert('Erro', 'Preencha todos os campos.');
+      Alert.alert('Erro', 'Digite um CNPJ válido e existente e pressione o botão ao lado.');
       return;
     }
     if (!isValidCNPJ(form.cnpj)) {
@@ -130,14 +133,21 @@ const AddCNPJ = (): React.JSX.Element => {
         <ScrollContent>
           <Container>
             <PhotoButton onPress={handlePickImage} image={imageUri} />
+            <Row>
             <TextInput
-              label="CNPJ"
+              label="Digite o CNPJ e pressione o botão de retorno"
               placeholder="Digite o CNPJ da empresa"
               keyboardType="decimal-pad"
               onChangeText={t => updateFormField('cnpj', maskCNPJ(t))}
               value={form.cnpj}
               onSubmitEditing={() => fetchEmpresaFromAPI(form.cnpj)}
+              spaceFilled={3}
             />
+            <SearchButton onPress={() => fetchEmpresaFromAPI(form.cnpj)}>
+              <FontAwesome6 name="magnifying-glass" size={24} iconStyle="solid" color={theme.colors.backgroundApp} />
+            </SearchButton>
+
+            </Row>
             <TextInput label="Razão Social" placeholder="Razão social da empresa" value={form.razaoSocial} editable={false} />
             <TextInput label="Bairro" placeholder="Nome do bairro" value={form.bairro} editable={false} />
             <Row>
