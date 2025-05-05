@@ -14,6 +14,8 @@ export const Card = styled.View`
   border-style: solid;
 
   margin-bottom: ${props => props.theme.spacing.lg + 'px'};
+
+  position: relative;
 `;
 
 export const ImageContainer = styled.View`
@@ -22,6 +24,13 @@ export const ImageContainer = styled.View`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const DeleteButton = styled.TouchableOpacity`
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 20px;
 `;
 
 export const Row = styled.View`

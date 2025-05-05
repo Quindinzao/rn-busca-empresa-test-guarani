@@ -1,6 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 // External Libraries
 import React, { useCallback, useState } from 'react';
+import { Alert } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
 
 // Services
@@ -26,19 +27,19 @@ const Home = () => {
 
   useFocusEffect(
     useCallback(() => {
-      const fetchEmpresas = async () => {
-        try {
-          const data = await getEmpresas();
-          setAllEmpresas(data as EmpresaProps[]);
-          setEmpresas(data as EmpresaProps[]);
-        } catch (err) {
-          console.error('Erro ao buscar empresas:', err);
-        }
-      };
-
       fetchEmpresas();
     }, [])
   );
+
+  const fetchEmpresas = async () => {
+    try {
+      const data = await getEmpresas();
+      setAllEmpresas(data as EmpresaProps[]);
+      setEmpresas(data as EmpresaProps[]);
+    } catch (err) {
+      console.error('Erro ao buscar empresas:', err);
+    }
+  };
 
   const handleSearch = (text: string) => {
     setSearchTerm(text);
@@ -50,6 +51,33 @@ const Home = () => {
         empresa.cnpj.includes(text)
       );
       setEmpresas(filtered);
+    }
+  };
+
+  const handleOpenDeleteModal = async (cnpjToDelete: string) => {
+    if (cnpjToDelete === '') {
+      Alert.alert('Erro', 'CNPJ inválido.');
+      return;
+    }
+
+    Alert.alert('Deletar empres', 'Tem certeza de que deseja deletar essa empresá?', [
+      {
+        text: 'Cancelar',
+        onPress: () => console.log('Cancel Pressed'),
+        style: 'cancel',
+      },
+      {text: 'OK', onPress: () => handleDelete(cnpjToDelete)},
+    ]);
+  };
+
+  const handleDelete = async (cnpjToDelete: string) => {
+    try {
+      await deleteEmpresa(cnpjToDelete);
+      fetchEmpresas();
+      Alert.alert('Sucesso', 'Empresa deletada com sucesso!');
+    } catch (err) {
+      Alert.alert('Erro', 'Erro ao deletar empresa.');
+      console.error(err);
     }
   };
 
@@ -70,7 +98,12 @@ const Home = () => {
             <List
               data={empresas}
               keyExtractor={(item: any) => item.id.toString()}
-              renderItem={({ item } : any) => <EmpresaCard item={item} />}
+              renderItem={({ item }: { item: any }) => (
+                <EmpresaCard
+                  item={item}
+                  handleDelete={() => handleOpenDeleteModal(item.cnpj)}
+                />
+              )}
               contentContainerStyle={{ flexGrow: 1, paddingBottom: 16 }}
             />
           </>

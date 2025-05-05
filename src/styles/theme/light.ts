@@ -20,5 +20,7 @@ export const lightTheme: Theme = {
     colorLabel: '#6E6E6E',
     colorPlaceholder: '#AAAAAA',
     buttonTextColor: '#FFFFFF',
+
+    error: '#A90C0C',
   },
 };
