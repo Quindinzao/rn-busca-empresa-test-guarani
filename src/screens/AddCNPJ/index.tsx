@@ -98,7 +98,7 @@ const AddCNPJ = (): React.JSX.Element => {
 
   const handleSave = async () => {
     if (!form.cnpj || !form.razaoSocial || !form.rua || !form.numero || !form.bairro || !form.municipio || !form.uf || !form.cep) {
-      Alert.alert('Erro', 'Digite um CNPJ válido e existente e pressione o botão ao lado.');
+      Alert.alert('Erro', 'Digite um CNPJ válido e existente e aguarde ou pressione o botão ao lado.');
       return;
     }
     if (!isValidCNPJ(form.cnpj)) {
@@ -126,6 +126,12 @@ const AddCNPJ = (): React.JSX.Element => {
     }
   };
 
+  useEffect(() => {
+    if (form.cnpj.length === 18) {
+      fetchEmpresaFromAPI(form.cnpj);
+    }
+  }, [form.cnpj]);
+
   return (
     <Wrapper>
       <Header title="Adicionar CNPJ" />
@@ -134,18 +140,15 @@ const AddCNPJ = (): React.JSX.Element => {
           <Container>
             <PhotoButton onPress={handlePickImage} image={imageUri} />
             <Row>
-            <TextInput
-              label="Digite o CNPJ e pressione o botão de retorno"
-              placeholder="Digite o CNPJ da empresa"
-              keyboardType="decimal-pad"
-              onChangeText={t => updateFormField('cnpj', maskCNPJ(t))}
-              value={form.cnpj}
-              onSubmitEditing={() => fetchEmpresaFromAPI(form.cnpj)}
-              spaceFilled={3}
-            />
-            <SearchButton onPress={() => fetchEmpresaFromAPI(form.cnpj)}>
-              <FontAwesome6 name="magnifying-glass" size={24} iconStyle="solid" color={theme.colors.backgroundApp} />
-            </SearchButton>
+              <TextInput
+                label="CNPJ"
+                placeholder="Digite o CNPJ da empresa"
+                keyboardType="decimal-pad"
+                onChangeText={t => updateFormField('cnpj', maskCNPJ(t))}
+                value={form.cnpj}
+                onSubmitEditing={() => fetchEmpresaFromAPI(form.cnpj)}
+                spaceFilled={3}
+              />
 
             </Row>
             <TextInput label="Razão Social" placeholder="Razão social da empresa" value={form.razaoSocial} editable={false} />

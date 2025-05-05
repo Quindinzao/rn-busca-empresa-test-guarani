@@ -60,7 +60,7 @@ const Home = () => {
       return;
     }
 
-    Alert.alert('Deletar empres', 'Tem certeza de que deseja deletar essa empresá?', [
+    Alert.alert('Deletar empres', 'Tem certeza de que deseja deletar essa empresa?', [
       {
         text: 'Cancelar',
         onPress: () => console.log('Cancel Pressed'),
@@ -85,16 +85,20 @@ const Home = () => {
     <Wrapper>
       <Header title="Empresas" />
       <Container>
-        {empresas.length === 0 ? (
+        <TextInput
+          label=""
+          placeholder="Pesquisar por CNPJ"
+          value={searchTerm}
+          onChangeText={handleSearch}
+        />
+        {empresas.length === 0 && searchTerm === '' && (
           <Text fontFamilyProp="light">Nenhuma empresa cadastrada.</Text>
-        ) : (
+        )}
+        {empresas.length === 0 && searchTerm !== '' && (
+          <Text fontFamilyProp="light">Nenhuma empresa foi encontrada.</Text>
+        )}
+        {empresas.length > 0 && (
           <>
-            <TextInput
-              label=""
-              placeholder="Pesquisar por CNPJ"
-              value={searchTerm}
-              onChangeText={handleSearch}
-            />
             <List
               data={empresas}
               keyExtractor={(item: any) => item.id.toString()}
