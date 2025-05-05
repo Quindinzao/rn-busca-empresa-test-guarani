@@ -5,7 +5,10 @@ Este projeto foi desenvolvido com **React Native CLI**, usando **TypeScript**, *
 ## Funções
 
 ### ✅ Cadastrar Empresas
-Permite ao usuário inserir dados de uma empresa através de um formulário. Os campos geralmente incluem CNPJ, razão social, endereço (rua, número, bairro, município, UF, CEP) e uma imagem da empresa. Os dados são armazenados localmente no SQLite para que possam ser acessados mesmo sem conexão com a internet.
+Permite ao usuário inserir dados de uma empresa através de um formulário. Os campos incluem CNPJ, razão social, endereço (rua, número, bairro, município, UF, CEP) e uma imagem da empresa, que é opcional. Os dados são armazenados localmente no SQLite para que possam ser acessados mesmo sem conexão com a internet.
+
+### 🗑️ Deletar empresa
+Permite ao usuário deletar empresas através da lista de exibição, onde o usuário clica em uma lixeixa, abre-se um alerta e, ao confirmar, a empresa é deletada do SQLite.
 
 ### 🔍 Pesquisar por CNPJ na lista
 Oferece um campo de busca na tela de listagem das empresas. À medida que o usuário digita o CNPJ (total ou parcial), a lista exibida é filtrada dinamicamente para mostrar apenas as empresas cujo CNPJ contém o texto digitado. Essa busca é feita localmente, com base nos dados armazenados.
